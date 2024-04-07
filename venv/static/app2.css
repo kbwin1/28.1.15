@@ -1,0 +1,23 @@
+body{
+    background-color: darkgray;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: azure;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    color: darkgreen;
+    border-radius: 10px;
+}
+input{
+    max-width: 100px;
+    margin: 5px;
+}

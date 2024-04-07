@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/app.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Pets</h1>
+    <div class="cont">
+        <div class="container">
+            {% for pet in pets %}
+            <p>{{pet.name}}</p>
+            <img src={{pet.photo_url}} alt="missing pet photo update later pls">
+            <a href="/info/{{pet.id}}">Info</a>
+            {% if pet.available %}
+            <b><p class="available">available</p></b>
+            {% else %}
+            <p class="not_av">Sorry</p>
+            {% endif %}
+            {% endfor %} 
+        </div>
+    </div>
+   
+
+    <a class="button" href="/add_new_pet">Add Pet</a>
+    
+</body>
+</html>
